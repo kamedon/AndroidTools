@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    Hello {{ name }}!
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.value) }}
+    {{ form_end(form) }}
 {% endblock %}
 
