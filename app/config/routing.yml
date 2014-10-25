@@ -1,0 +1,4 @@
+kamedon_android_tool:
+    resource: "@KamedonAndroidToolBundle/Resources/config/routing.yml"
+    prefix:   /
+
