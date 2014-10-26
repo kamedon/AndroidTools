@@ -16,7 +16,7 @@
 
     <ul id="navigation">
         {% for value in parentStringResource.strings %}
-            <li>{{ value.lang }}</li>
+            <li>{{ value.lang }}:{{ value.value }}</li>
         {% endfor %}
     </ul>
 {% endblock %}

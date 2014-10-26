@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class StringResourceRepository extends EntityRepository
 {
+    public function isRegisteredLang(StringResource $stringResource)
+    {
+        /**
+         * @var array
+         */
+        $res = $this->findBy(
+            ['parent' => $stringResource->getParent()->getId(), 'lang' => $stringResource->getLang()]);
+        return count($res) > 0 ;
+    }
 }

@@ -51,11 +51,17 @@ class StringResourceController extends Controller
             $newForm = $this->createForm(new ChildrenStringResourceType(), $stringResource);
             $newForm->handleRequest($request);
             if ($newForm->isValid()) {
-                $em = $this->get('doctrine')->getManager();
-                $em->persist($stringResource);
-                $em->flush();
-                $this->get('session')->getFlashBag()->set('notice', '登録完了しました');
+                $repository = $this->getDoctrine()->getRepository('KamedonAndroidToolBundle:StringResource');
+                if (!$repository->isRegisteredLang($stringResource)) {
+                    $em = $this->get('doctrine')->getManager();
+                    $em->persist($stringResource);
+                    $em->flush();
+                    $this->get('session')->getFlashBag()->set('notice', '登録完了しました');
+                } else {
+                    $this->get('session')->getFlashBag()->set('notice', 'すでに登録されています');
+                }
             }
+
             $deleteForm = $this->createForm(new DeleteStringResourceType(), $parentStringResource);
             $deleteForm->handleRequest($request);
             if ($deleteForm->isValid()) {
