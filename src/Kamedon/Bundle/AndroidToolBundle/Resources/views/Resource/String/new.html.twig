@@ -1,23 +1,33 @@
 {% extends 'base.html.twig' %}
-{% block body %}
-    <h3> {{ parentStringResource.value }}
-        {{ form_start(deleteForm) }}
-        {{ form_errors(deleteForm) }}
-        {{ form_end(deleteForm) }}
-    </h3>
-
-    {{ form_start(newForm) }}
-    {{ form_errors(newForm) }}
-
-    {{ form_row(newForm.lang) }}
-    {{ form_row(newForm.value) }}
-    {{ form_end(newForm) }}
+{% block row_right %}
+    {{ form_start(deleteForm) }}
+    {{ form_errors(deleteForm) }}
+    {{ parentStringResource.value }}
+    {{ form_end(deleteForm) }}
 
 
-    <ul id="navigation">
-        {% for value in parentStringResource.strings %}
-            <li>{{ value.lang }}:{{ value.value }}</li>
-        {% endfor %}
-    </ul>
+    <div class="row">
+        <div class="span6">
+            <div class="form-actions">
+
+                {{ form_start(newForm) }}
+                {{ form_errors(newForm) }}
+
+                {{ form_row(newForm.lang) }}
+                {{ form_row(newForm.value) }}
+                {{ form_end(newForm) }}
+
+            </div>
+        </div>
+        <div class="span3">
+            <div>
+                <ul class="list-unstyled">
+                    {% for value in parentStringResource.strings %}
+                        <li>{{ value.lang }}:{{ value.value }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+    </div>
 {% endblock %}
-

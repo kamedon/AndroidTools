@@ -19,6 +19,12 @@ class StringResourceRepository extends EntityRepository
          */
         $res = $this->findBy(
             ['parent' => $stringResource->getParent()->getId(), 'lang' => $stringResource->getLang()]);
-        return count($res) > 0 ;
+        return count($res) > 0;
+    }
+
+    public function getParents()
+    {
+        $res = $this->findBy(['parent' => null]);
+        return $res;
     }
 }

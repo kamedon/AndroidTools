@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block row_right %}
+    {% for string in strings %}
+        <li><a href="{{ url('new_children_string_resource',{id: string.id}) }}">{{ string.value }}</a></li>
+    {% endfor %}
+
+{% endblock %}
+

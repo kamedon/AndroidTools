@@ -37,6 +37,17 @@ class StringResourceController extends Controller
     }
 
     /**
+     * @Route ("/list", name="list_string_resource")
+     * @Template("KamedonAndroidToolBundle:Resource:String/list.html.twig")
+     */
+    public function listAction(Request $request)
+    {
+        $repository = $this->getDoctrine()->getRepository('KamedonAndroidToolBundle:StringResource');
+        $parents = $repository->getParents();
+        return ['strings' => $parents];
+    }
+
+    /**
      * @Route ("/{id}/new", name="new_children_string_resource")
      * @Template("KamedonAndroidToolBundle:Resource:String/new.html.twig")
      */
@@ -58,7 +69,7 @@ class StringResourceController extends Controller
                     $em->flush();
                     $this->get('session')->getFlashBag()->set('notice', '登録完了しました');
                 } else {
-                    $this->get('session')->getFlashBag()->set('notice', 'すでに登録されています');
+                    $this->get('session')->getFlashBag()->set('error', 'すでに登録されています');
                 }
             }
 
