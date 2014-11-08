@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e295d49-ea6a-4009-8d89-f79590744726" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/ExtractToFileInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/UnTar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/UnZip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/UnZipTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/FindFile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/FindFileTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsXmlResourceFinder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringsXmlResourceFinderTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Symfony2.iws" />
@@ -34,26 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExtractToFileInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/ExtractToFileInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="255">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip.php" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/zip.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="5168" max-vertical-offset="16048">
-              <caret line="320" column="10" selection-start-line="320" selection-start-column="10" selection-end-line="320" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UnTar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/UnTar.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,11 +44,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnZip.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UnZip.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/UnZip.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32894737" vertical-offset="11" max-vertical-offset="391">
+            <state vertical-scroll-proportion="-4.8076925" vertical-offset="11" max-vertical-offset="391">
               <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringsXmlResourceFinder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsXmlResourceFinder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringsResourceData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsResourceData.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="17" max-vertical-offset="493">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_types.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_types.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="255" max-vertical-offset="3808">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindFile.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/FindFile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49210528" vertical-offset="459" max-vertical-offset="918">
+              <caret line="43" column="22" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringsXmlResourceFinderTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringsXmlResourceFinderTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5" vertical-offset="68" max-vertical-offset="459">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindFileTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/FindFileTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="510">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCase.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/PHPUnit/Framework/TestCase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0384617" vertical-offset="15951" max-vertical-offset="31722">
+              <caret line="988" column="0" selection-start-line="988" selection-start-column="0" selection-end-line="988" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,28 +130,6 @@
             <state vertical-scroll-proportion="-10.038462" vertical-offset="28" max-vertical-offset="442">
               <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KamedonAndroidToolBundle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/KamedonAndroidToolBundle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadStringXmlResourceTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/LoadStringXmlResourceTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="748">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-              <folding>
-                <element signature="e#78#151#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +164,11 @@
         <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/ExtractToFileInterface.php" />
         <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/UnZipTest.php" />
         <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/UnZip.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/StringsXmlResourceFinder.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringsXmlResourceFinderTest.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsXmlResourceFinder.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/FindFileTest.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/FindFile.php" />
       </list>
     </option>
   </component>
@@ -544,6 +577,110 @@
               <option name="myItemId" value="Tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utility" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20141108204856" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kamedon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidToolBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utility" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20141108204856" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kamedon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidToolBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -585,31 +722,12 @@
       <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Resources/views/Default" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android" />
       <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android" />
       <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Resources/views/Resource/String" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.UnZipTest.Zip解凍テスト">
-    <configuration default="false" name="StringResourceRegisterTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\StringResourceRegisterTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringResourceRegisterTest.php" scope="Class" />
-      <RunnerSettings RunnerId="PhpRunner" />
-      <RunnerSettings RunnerId="PhpUnitDebugRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpUnitDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="StringResourceRegisterTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\StringResourceRegisterTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlRegisterTest.php" scope="Class" />
-      <RunnerSettings RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="StringXmlResourceLoadTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\StringXmlResourceLoadTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadTest.php" scope="Class" />
-      <RunnerSettings RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.FindFileTest.dir配下のファイルを検索する">
     <configuration default="false" name="LoadStringXmlResourceTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\LoadStringXmlResourceTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/LoadStringXmlResourceTest.php" scope="Class" />
       <RunnerSettings RunnerId="PhpRunner" />
@@ -618,6 +736,24 @@
     </configuration>
     <configuration default="false" name="UnZipTest.Zip解凍テスト" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\File\UnZipTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/UnZipTest.php" method="Zip解凍テスト" scope="Method" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StringsXmlResourceFinderTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\StringsXmlResourceFinderTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringsXmlResourceFinderTest.php" scope="Class" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FindFileTest.dir配下のファイルを検索する" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\File\FindFileTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/FindFileTest.php" method="dir配下のファイルを検索する" scope="Method" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FindFileTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\File\FindFileTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/FindFileTest.php" scope="Class" />
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
       <method />
@@ -870,19 +1006,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest (1)" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.StringXmlResourceLoadTest" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.LoadStringXmlResourceTest" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.UnZipTest.Zip解凍テスト" />
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.LoadStringXmlResourceTest" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.UnZipTest.Zip解凍テスト" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.StringsXmlResourceFinderTest" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.FindFileTest.dir配下のファイルを検索する" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.FindFileTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.UnZipTest.Zip解凍テスト" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.LoadStringXmlResourceTest" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.StringXmlResourceLoadTest" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest (1)" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.FindFileTest.dir配下のファイルを検索する" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.FindFileTest" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.StringsXmlResourceFinderTest" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.UnZipTest.Zip解凍テスト" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.LoadStringXmlResourceTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -905,12 +1041,12 @@
       <workItem from="1414303380734" duration="13000" />
       <workItem from="1414303408719" duration="7994000" />
       <workItem from="1415438536983" duration="135000" />
-      <workItem from="1415438686349" duration="7538000" />
+      <workItem from="1415438686349" duration="11932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33815000" />
+    <option name="totallyTimeSpent" value="38209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1358" height="738" extended-state="0" />
@@ -1001,29 +1137,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Form/DeleteStringResourceType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="612">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="204">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Resources/views/Resource/String/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="255">
@@ -1278,14 +1391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/PHPUnit/Framework/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="1020" max-vertical-offset="31722">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SimpleXML.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32894737" vertical-offset="5944" max-vertical-offset="6630">
@@ -1306,14 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="476">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsResourceData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="17" max-vertical-offset="493">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1370,8 +1467,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/UnZip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32894737" vertical-offset="11" max-vertical-offset="391">
+        <state vertical-scroll-proportion="-4.8076925" vertical-offset="11" max-vertical-offset="391">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/PHPUnit/Framework/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0384617" vertical-offset="15951" max-vertical-offset="31722">
+          <caret line="988" column="0" selection-start-line="988" selection-start-column="0" selection-end-line="988" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsResourceData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="17" max-vertical-offset="493">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsXmlResourceFinder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringsXmlResourceFinderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5" vertical-offset="68" max-vertical-offset="459">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data/20141108204856/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="406">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/File/FindFileTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="510">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_types.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="255" max-vertical-offset="3808">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/File/FindFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49210528" vertical-offset="459" max-vertical-offset="918">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="25" />
           <folding />
         </state>
       </provider>
