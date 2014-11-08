@@ -10,11 +10,16 @@ namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android;
 
 
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
 
 class FindStringXmlResource
 {
     const STRING_XML_RESOURCE_NAME = 'strings.xml';
 
+    /**
+     * @param $dir
+     * @return \Generator
+     */
     public static function find($dir)
     {
         $finder = new Finder();
@@ -23,8 +28,9 @@ class FindStringXmlResource
             ->name(self::STRING_XML_RESOURCE_NAME)
             ->files();
 
+        /** @var SplFileInfo $fileInfo */
         foreach ($iterator as $fileInfo) {
-            yield $fileInfo->getPathname();
+            yield $fileInfo;
         }
 
     }

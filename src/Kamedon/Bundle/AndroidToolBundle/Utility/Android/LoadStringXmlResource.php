@@ -2,6 +2,7 @@
 namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android;
 
 use Kamedon\Bundle\AndroidToolBundle\Utility\File\UnZip;
+use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\Form\Exception\RuntimeException;
 
 class LoadStringXmlResource
@@ -17,7 +18,7 @@ class LoadStringXmlResource
             foreach (self::loadDir($dir) as $resource) {
                 yield $resource;
             }
-        }else{
+        } else {
             throw new \RuntimeException();
         }
     }
@@ -28,9 +29,15 @@ class LoadStringXmlResource
      */
     public static function loadDir($dir)
     {
+        /** @var SplFileInfo $file */
         foreach (FindStringXmlResource::find($dir) as $file) {
-            $data = file_get_contents($file);
+            $data = file_get_contents($file->getPathname());
+            $path = explode('/', $file->getPath());
+            preg_match("/values-?(.*)/", $path[count($path) - 1], $res);
+            $lang = $res[1];
+            /** @var StringsResourceData $resource */
             foreach (self::parse($data) as $resource) {
+                $resource->lang = $lang;
                 yield $resource;
             }
         }

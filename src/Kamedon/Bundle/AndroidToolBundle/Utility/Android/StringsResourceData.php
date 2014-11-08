@@ -26,4 +26,10 @@ class StringsResourceData
      * @var string
      */
     public $value;
+
+    /**
+     * Android strings xml の値
+     * @var string
+     */
+    public $lang;
 }
