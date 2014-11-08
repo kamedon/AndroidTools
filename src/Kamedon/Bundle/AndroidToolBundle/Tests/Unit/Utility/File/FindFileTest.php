@@ -18,7 +18,7 @@ class FindFileTest extends \PHPUnit_Framework_TestCase
      */
     public function dir配下のファイルを検索する()
     {
-        $dir = __DIR__ . '/../Android/data/20141108204856';
+        $dir = __DIR__ . '/../Android/data/values_sample';
         $this->isTrue(is_dir($dir), 'フォルダがありません');
         foreach (FindFile::find($dir, 'strings.xml') as $filepath) {
             var_dump($filepath);
