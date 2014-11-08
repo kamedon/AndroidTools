@@ -12,8 +12,9 @@ class UnZipTest extends \PHPUnit_Framework_TestCase
     public function Zip解凍テスト()
     {
         $date = new \DateTime();
-        $path = __DIR__ . '/../Android/data/values.zip';
-        $dir = __DIR__ . '/../Android/data/' . $date->format('YmdHis').'/';
+        $baseDir = __DIR__ . '/../../../Data';
+        $path = $baseDir . '/values.zip';
+        $dir = $baseDir . '/temp/' . $date->format('YmdHis') . '/';
         $this->assertTrue(file_exists($path), 'ファイルが存在していません');
         UnZip::extractTo($path, $dir);
     }

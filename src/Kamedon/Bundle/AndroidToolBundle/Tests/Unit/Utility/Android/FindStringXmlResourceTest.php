@@ -19,7 +19,7 @@ class FindStringXmlResourceTest extends \PHPUnit_Framework_TestCase
      */
     public function ディレクトリ以下のstringリソースを取得する()
     {
-        $path = __DIR__ . '/data/values_sample';
+        $path = __DIR__ . '/../../../Data/values_sample';
         $ans = [
             $path . '/values/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,
             $path . '/values-ja/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,

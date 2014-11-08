@@ -23,7 +23,9 @@ class LoadStringXmlResourceTest extends \PHPUnit_Framework_TestCase
      */
     public function Androidのstringsxmlのデータを解析()
     {
-        $data = file_get_contents(__DIR__ . "/data/strings.xml");
+//        $data = file_get_contents(__DIR__ . "/data/strings.xml");
+        $path= __DIR__ . '/../../../Data/strings.xml';
+        $data = file_get_contents($path);
         $ans = [
             'app_name' => '"SilentCamera"',
             'save_complete' => '"Image is successfully saved!"',
