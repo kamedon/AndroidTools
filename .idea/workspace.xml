@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e295d49-ea6a-4009-8d89-f79590744726" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringXmlResourceLoad.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsResourceData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data/strings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringResourceRegisterTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringXmlRegister.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data/values.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data/values.zip" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadTest.php" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/LoadStringXmlResourceTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringXmlResourceLoad.php" afterPath="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/LoadStringXmlResource.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Symfony2.iws" />
@@ -82,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringXmlResourceLoad.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringXmlResourceLoad.php">
+      <file leaf-file-name="LoadStringXmlResource.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/LoadStringXmlResource.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="476">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.58157897" vertical-offset="0" max-vertical-offset="476">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -112,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringXmlXmlLoadTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadTest.php">
+      <file leaf-file-name="LoadStringXmlResourceTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/LoadStringXmlResourceTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9394737" vertical-offset="289" max-vertical-offset="748">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.769231" vertical-offset="368" max-vertical-offset="748">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding>
                 <element signature="e#78#151#0#PHP" expanded="true" />
               </folding>
@@ -165,6 +159,9 @@
         <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringsResourceData.php" />
         <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data/strings.xml" />
         <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadTest.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadStringXmlResourceTest.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/LoadStringXmlResource.php" />
+        <option value="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/LoadStringXmlResourceTest.php" />
       </list>
     </option>
   </component>
@@ -531,6 +528,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data" />
       <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/data" />
       <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Resources/views/Resource/String" />
       <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Resources/public" />
@@ -541,7 +539,7 @@
       <recent name="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Resources/views/Resource/String" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.StringXmlResourceLoadTest">
+  <component name="RunManager" selected="PHPUnit.LoadStringXmlResourceTest">
     <configuration default="false" name="StringResourceRegisterTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\StringResourceRegisterTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringResourceRegisterTest.php" scope="Class" />
       <RunnerSettings RunnerId="PhpRunner" />
@@ -558,6 +556,12 @@
     </configuration>
     <configuration default="false" name="StringXmlResourceLoadTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\StringXmlResourceLoadTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadTest.php" scope="Class" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LoadStringXmlResourceTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android\LoadStringXmlResourceTest" file="$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/LoadStringXmlResourceTest.php" scope="Class" />
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
       <method />
@@ -809,16 +813,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest" />
       <item index="1" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest (1)" />
       <item index="2" class="java.lang.String" itemvalue="PHPUnit.StringXmlResourceLoadTest" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.LoadStringXmlResourceTest" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.StringXmlResourceLoadTest" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest (1)" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.LoadStringXmlResourceTest" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.StringXmlResourceLoadTest" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest (1)" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.StringResourceRegisterTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -841,12 +847,12 @@
       <workItem from="1414303380734" duration="13000" />
       <workItem from="1414303408719" duration="7994000" />
       <workItem from="1415438536983" duration="135000" />
-      <workItem from="1415438686349" duration="5266000" />
+      <workItem from="1415438686349" duration="5646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31543000" />
+    <option name="totallyTimeSpent" value="31923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1358" height="738" extended-state="0" />
@@ -928,13 +934,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringXmlResourceLoad.php</url>
-          <line>12</line>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1307,10 +1307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/StringXmlResourceLoad.php">
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="476">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1323,21 +1323,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/data/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/LoadStringXmlResourceTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Tests/Unit/Utility/Android/StringXmlXmlLoadTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9394737" vertical-offset="289" max-vertical-offset="748">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.769231" vertical-offset="368" max-vertical-offset="748">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding>
             <element signature="e#78#151#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kamedon/Bundle/AndroidToolBundle/Utility/Android/LoadStringXmlResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58157897" vertical-offset="0" max-vertical-offset="476">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

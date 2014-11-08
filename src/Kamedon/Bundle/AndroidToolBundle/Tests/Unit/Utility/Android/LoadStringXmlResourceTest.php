@@ -2,19 +2,19 @@
 namespace Kamedon\Bundle\AndroidToolBundle\Tests\Unit\Utility\Android;
 
 use Kamedon\Bundle\AndroidToolBundle\Utility\Android\StringsResourceData;
-use Kamedon\Bundle\AndroidToolBundle\Utility\Android\StringXmlResourceLoad;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\LoadStringXmlResource;
 
-class StringXmlResourceLoadTest extends \PHPUnit_Framework_TestCase
+class LoadStringXmlResourceTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
-     * @var StringXmlResourceLoad
+     * @var LoadStringXmlResource
      */
     private $stringResourceRegister;
 
     protected function setUp()
     {
-        $this->stringResourceRegister = new StringXmlResourceLoad();
+        $this->stringResourceRegister = new LoadStringXmlResource();
     }
 
 
@@ -30,7 +30,7 @@ class StringXmlResourceLoadTest extends \PHPUnit_Framework_TestCase
         ];
         $n = 0;
         /** @var StringsResourceData $resource */
-        foreach (StringXmlResourceLoad::load($data) as $resource) {
+        foreach (LoadStringXmlResource::load($data) as $resource) {
             $n++;
             $this->assertSame($ans[$resource->name], $resource->value);
         }

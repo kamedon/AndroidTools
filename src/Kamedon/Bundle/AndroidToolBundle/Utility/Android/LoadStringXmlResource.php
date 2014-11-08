@@ -1,11 +1,11 @@
 <?php
 namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android;
 
-class StringXmlResourceLoad
+class LoadStringXmlResource
 {
     /**
      * @param $data
-     * @return \Generator
+     * @return \Generator StringsResourceData
      */
     public static function load($data)
     {
