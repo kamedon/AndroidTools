@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% stylesheets 'bundles/kamedonandroidtool/css/bootstrap.min.css' %}
+    <link href="{{ asset_url }}" rel="stylesheet" media="screen">
+    {% endstylesheets %}
+
+
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+<div class="navbar">
+
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="{{ url("top") }}">AndrodTool</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    {% if app.session.flashBag.has('notice') %}
+        <div class="alert alert-success" role="alert">
+            {% for flashMessage in app.session.flashBag.get('notice') %}
+                {{ flashMessage }}
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% if app.session.flashBag.has('error') %}
+        <div class="alert alert-error" role="alert">
+            {% for flashMessage in app.session.flashBag.get('error') %}
+                {{ flashMessage }}
+            {% endfor %}
+        </div>
+    {% endif %}
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <ul class="nav navi-list">
+                    <li class="nav-header">string.xml 管理</li>
+                    <li><a href="{{ url("list_string_resource") }}">list</a></li>
+                    <li><a href="{{ url("new_string_resource") }}">new</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="span9"> {% block row_right %}{% endblock %}</div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+{% javascripts '@KamedonAndroidToolBundle/Resources/public/js/bootstrap.js' %}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+{% block javascripts %}{% endblock %}
+
+</body>
 </html>

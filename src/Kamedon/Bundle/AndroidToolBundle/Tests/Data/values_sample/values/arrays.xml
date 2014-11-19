@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dirArray">
+        <!--<item>画像削除</item>-->
+        <item>名前の変更</item>
+    </string-array>
+
+    <string-array name="imgArray">
+        <item>画像削除</item>
+        <item>名前の変更</item>
+        <!--<item>画像情報</item>>-->
+    </string-array>
+</resources>

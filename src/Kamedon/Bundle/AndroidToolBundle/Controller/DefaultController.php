@@ -1,18 +1,31 @@
 <?php
 
 namespace Kamedon\Bundle\AndroidToolBundle\Controller;
+
+use Kamedon\Bundle\AndroidToolBundle\Entity\StringResource;
+use Kamedon\Bundle\AndroidToolBundle\Form\ChildrenStringResourceType;
+use Kamedon\Bundle\AndroidToolBundle\Form\DeleteStringResourceType;
+use Kamedon\Bundle\AndroidToolBundle\Form\StringResourceType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use \Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
+
+/**
+ * @Route("/")
+ */
 class DefaultController extends Controller
 {
     /**
-     * @Route ("/hello/{name}")
-     * @param $name
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route ("/", name="top")
+     * @Template("KamedonAndroidToolBundle:Default:index.html.twig")
      */
-    public function indexAction($name)
+    public function indexAction(Request $request)
     {
-        return $this->render('KamedonAndroidToolBundle:Default:index.html.twig', array('name' => $name));
+
     }
+
 }
+

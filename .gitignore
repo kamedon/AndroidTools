@@ -9,3 +9,6 @@
 /vendor/
 /bin/
 /composer.phar
+
+src/Kamedon/Bundle/AndroidToolBundle/Tests/Data/temp/
+
