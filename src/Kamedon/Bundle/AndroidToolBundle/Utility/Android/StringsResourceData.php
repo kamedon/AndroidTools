@@ -16,6 +16,15 @@ namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android;
  */
 class StringsResourceData
 {
+    const DEFAULT_LANG = 'default';
+
+    /**
+     * Android strings xml の値
+     * @var string
+     *
+     */
+    public $lang = self::DEFAULT_LANG;
+
     /**
      * Android strings xmlのname属性の値
      * @var string
@@ -27,9 +36,4 @@ class StringsResourceData
      */
     public $value;
 
-    /**
-     * Android strings xml の値
-     * @var string
-     */
-    public $lang;
 }

@@ -21,12 +21,12 @@ class FindStringXmlResourceTest extends \PHPUnit_Framework_TestCase
     {
         $path = __DIR__ . '/../../../Data/values_sample';
         $ans = [
-            $path . '/values/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,
-            $path . '/values-ja/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,
-            $path . '/values-ko/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,
-            $path . '/values-pt/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,
-            $path . '/values-ru/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,
-            $path . '/values-zh/' . FindStringXmlResource::STRING_XML_RESOURCE_NAME,
+            $path . '/values/' . FindStringXmlResource::STRING_XML_RESOURCE_FILE_NAME,
+            $path . '/values-ja/' . FindStringXmlResource::STRING_XML_RESOURCE_FILE_NAME,
+            $path . '/values-ko/' . FindStringXmlResource::STRING_XML_RESOURCE_FILE_NAME,
+            $path . '/values-pt/' . FindStringXmlResource::STRING_XML_RESOURCE_FILE_NAME,
+            $path . '/values-ru/' . FindStringXmlResource::STRING_XML_RESOURCE_FILE_NAME,
+            $path . '/values-zh/' . FindStringXmlResource::STRING_XML_RESOURCE_FILE_NAME,
         ];
         $n = 0;
         foreach (FindStringXmlResource::find($path) as $file) {

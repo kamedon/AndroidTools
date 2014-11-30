@@ -4,6 +4,7 @@ namespace Kamedon\Bundle\AndroidToolBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\StringsResourceData;
 
 /**
  * StringResource
@@ -27,7 +28,7 @@ class StringResource
      *
      * @ORM\Column(name="lang", type="string", length=8, nullable=true)
      */
-    private $lang;
+    private $lang = StringsResourceData::DEFAULT_LANG;
 
     /**
      * @var string

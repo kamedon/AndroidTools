@@ -37,13 +37,12 @@ class LoadStringXmlResourceTest extends \PHPUnit_Framework_TestCase
                     '"保存"'
                 ],
             ];
-        $langs = ['', 'ja', 'pt', 'ru', 'zh', 'ko'];
+        $langs = [StringsResourceData::DEFAULT_LANG, 'ja', 'pt', 'ru', 'zh', 'ko'];
         /** @var StringsResourceData $resource */
         foreach (LoadStringXmlResource::loadZip($zip, $dir) as $resource) {
-            $this->assertTrue(in_array($resource->value, $ans[$resource->name]), $resource->value . ":not found");
-            $this->assertTrue(in_array($resource->lang, $langs), $resource->lang . ":not found");
+            $this->assertTrue(in_array($resource->value, $ans[$resource->name]), $resource->value . ":not found value:".$resource->value);
+            $this->assertTrue(in_array($resource->lang, $langs), $resource->lang . ":not found Lang:".$resource->name);
         }
-
         system("rm -rf {$dir}");
     }
 
@@ -65,7 +64,7 @@ class LoadStringXmlResourceTest extends \PHPUnit_Framework_TestCase
                     '"保存"'
                 ],
             ];
-        $langs = ['', 'ja', 'pt', 'ru', 'zh', 'ko'];
+        $langs = [StringsResourceData::DEFAULT_LANG, 'ja', 'pt', 'ru', 'zh', 'ko'];
 
         /** @var StringsResourceData $resource */
         foreach (LoadStringXmlResource::loadDir($dir) as $resource) {

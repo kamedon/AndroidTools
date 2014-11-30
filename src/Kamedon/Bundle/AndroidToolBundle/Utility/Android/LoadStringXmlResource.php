@@ -5,9 +5,15 @@ use Kamedon\Bundle\AndroidToolBundle\Utility\File\UnZip;
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Component\Form\Exception\RuntimeException;
 
+/**
+ * string.xmlの解析
+ * Class LoadStringXmlResource
+ * @package Kamedon\Bundle\AndroidToolBundle\Utility\Android
+ */
 class LoadStringXmlResource
 {
     /**
+     * zipから一行のリソースデータのGeneratorを作る
      * @param $zipFile
      * @param string $dir
      * @return \Generator
@@ -24,6 +30,7 @@ class LoadStringXmlResource
     }
 
     /**
+     * ディレクトリ以下からリソースデータのGeneratorを作る
      * @param $dir
      * @return \Generator StringsResourceData
      */
@@ -37,7 +44,9 @@ class LoadStringXmlResource
             $lang = $res[1];
             /** @var StringsResourceData $resource */
             foreach (self::parse($data) as $resource) {
-                $resource->lang = $lang;
+                if(!empty($lang)){
+                    $resource->lang = $lang;
+                }
                 yield $resource;
             }
         }
@@ -45,6 +54,7 @@ class LoadStringXmlResource
     }
 
     /**
+     * string.xmlをパースし、Generatorを作る
      * @param $data
      * @return \Generator StringsResourceData
      */

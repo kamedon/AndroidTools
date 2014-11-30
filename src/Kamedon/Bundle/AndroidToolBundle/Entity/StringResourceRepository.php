@@ -3,6 +3,7 @@
 namespace Kamedon\Bundle\AndroidToolBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\StringsResourceData;
 
 /**
  * StringResourceRepository
@@ -27,4 +28,45 @@ class StringResourceRepository extends EntityRepository
         $res = $this->findBy(['parent' => null]);
         return $res;
     }
+
+    /**
+     * @param \Generator $xmlData
+     */
+    public function register(\Generator $xmlData)
+    {
+        $repository = $this->getEntityManager();
+        $defaultResources = [];
+        $tempResources = [];
+
+        /**
+         * まずDefalutから登録
+         * @var StringsResourceData $data */
+        foreach ($xmlData as $data) {
+            $resource = new StringResource();
+            $resource->setLang($data->lang);
+            $resource->setValue($data->value);
+            if ($data->lang === StringsResourceData::DEFAULT_LANG) {
+                $defaultResources[$data->name] = $resource;
+            }else{
+                if(isset($defaultResources[$data->name])){
+                    $resource->setParent($defaultResources[$data->name]);
+                }else{
+                    $tempResources[] = $resource;
+                }
+            }
+            $repository->persist($resource);
+        }
+
+        /**
+         * @var StringResource $resource
+         */
+        foreach($tempResources as $resource){
+            if(isset($defaultResources[$data->name])){
+                $resource->setParent($defaultResources[$data->name]);
+            }
+        }
+        $repository->flush();
+
+    }
 }
+
