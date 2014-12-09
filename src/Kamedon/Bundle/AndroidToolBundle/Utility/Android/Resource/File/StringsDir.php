@@ -2,42 +2,35 @@
 /**
  * Created by IntelliJ IDEA.
  * User: kamedon
- * Date: 14/11/09
- * Time: 1:18
+ * Date: 14/12/09
+ * Time: 21:50
  */
 
-namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android;
+namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File;
 
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
-/**
- * Androidのstring.xmlを探す
- * Class FindStringXmlResource
- * @package Kamedon\Bundle\AndroidToolBundle\Utility\Android
- */
-class FindStringXmlResource
+class StringsDir extends AndroidResourceFile
 {
     const STRING_XML_RESOURCE_FILE_NAME = 'strings.xml';
 
     /**
-     * ディレクトリ以下から探す
-     * @param $dir
      * @return \Generator
      */
-    public static function find($dir)
+    public function read()
     {
         $finder = new Finder();
         $iterator = $finder
-            ->in($dir)
+            ->in($this->path)
             ->name(self::STRING_XML_RESOURCE_FILE_NAME)
             ->files();
 
         /** @var SplFileInfo $fileInfo */
         foreach ($iterator as $fileInfo) {
-            yield $fileInfo;
+            $xml = new StringsXml($fileInfo->getPath());
+            yield $xml;
         }
-
     }
 }

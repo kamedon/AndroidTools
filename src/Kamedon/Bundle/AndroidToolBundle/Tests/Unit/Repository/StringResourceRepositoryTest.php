@@ -35,7 +35,7 @@ class StringResourceRepositoryTest extends \Symfony\Bundle\FrameworkBundle\Test\
         $dir = __DIR__ . '/../../Data/temp/' . $date->format('YmdHis');
 
         $repository = $this->em->getRepository('KamedonAndroidToolBundle:StringResource');
-        $repository->register(\Kamedon\Bundle\AndroidToolBundle\Utility\Android\LoadStringXmlResource::loadZip($zip,$dir));
+//        $repository->register(\Kamedon\Bundle\AndroidToolBundle\Utility\Android\LoadStringXmlResource::loadZip($zip,$dir));
     }
 
 }

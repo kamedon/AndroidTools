@@ -20,7 +20,9 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/generator-bundle": "~2.3",
         "phpunit/phpunit": "3.7.*",
-        "phake/phake": "@stable"
+        "phake/phake": "@stable",
+        "knplabs/knp-paginator-bundle": "~2.4",
+        "stof/doctrine-extensions-bundle": "~1.1@dev"
     },
     "require-dev": {
     },
