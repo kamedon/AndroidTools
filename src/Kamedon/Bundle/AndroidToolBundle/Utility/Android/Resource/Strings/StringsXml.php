@@ -24,7 +24,7 @@ class StringsXml extends AndroidResource
     {
         parent::__construct($path);
         $path = explode('/', $this->path);
-        preg_match("/values-?(.*)/", $path[count($path) - 1], $res);
+        preg_match("/values-?(.*)/", $path[count($path) - 2], $res);
         if (!empty($res[1])) {
             $this->lang = $res[1];
         }
@@ -62,4 +62,13 @@ class StringsXml extends AndroidResource
         $this->lang = $lang;
     }
 
+    /**
+     * @return \Generator
+     */
+    public function load()
+    {
+        foreach($this->read() as $string){
+            yield $string;
+        }
+    }
 }

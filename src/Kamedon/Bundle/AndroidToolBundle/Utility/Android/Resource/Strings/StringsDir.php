@@ -9,6 +9,7 @@
 namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings;
 
 
+use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidString;
 use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\AndroidResource;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
@@ -30,8 +31,23 @@ class StringsDir extends AndroidResource
 
         /** @var SplFileInfo $fileInfo */
         foreach ($iterator as $fileInfo) {
-            $xml = new StringsXml($fileInfo->getPath());
+            $xml = new StringsXml($fileInfo->getPath().'/'.self::STRING_XML_RESOURCE_FILE_NAME);
             yield $xml;
+        }
+    }
+
+    /**
+     * @return \Generator
+     */
+    public function load()
+    {
+        /** @var StringsXml $xml */
+        foreach ($this->read() as $xml) {
+            /** @var AndroidString $string */
+            foreach ($xml->read() as $string) {
+                $string->setLang($xml->getLang());
+                yield $string;
+            }
         }
     }
 }

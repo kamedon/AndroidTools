@@ -1,6 +1,7 @@
 <?php
 namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings;
 
+use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidString;
 use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\AndroidResource;
 use Kamedon\Bundle\AndroidToolBundle\Utility\File\UnZip;
 
@@ -36,5 +37,20 @@ class StringsZip extends AndroidResource
     {
         $this->dir = $dir;
         return $this;
+    }
+
+    /**
+     * @return \Generator
+     */
+    public function load()
+    {
+        /** @var StringsDir $dir */
+        foreach ($this->read() as $dir) {
+            /** @var AndroidString $string */
+            foreach($dir->load() as $string){
+                yield $string;
+            }
+        }
+
     }
 }
