@@ -3,9 +3,9 @@
 namespace Kamedon\Bundle\AndroidToolBundle\Controller;
 
 use Kamedon\Bundle\AndroidToolBundle\Entity\StringResource;
-use Kamedon\Bundle\AndroidToolBundle\Form\ChildrenStringResourceType;
-use Kamedon\Bundle\AndroidToolBundle\Form\DeleteStringResourceType;
-use Kamedon\Bundle\AndroidToolBundle\Form\StringResourceType;
+use Kamedon\Bundle\AndroidToolBundle\Form\TranslateStringResourceType;
+use Kamedon\Bundle\AndroidToolBundle\Form\DeleteAndroidStringType;
+use Kamedon\Bundle\AndroidToolBundle\Form\AndroidStringType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

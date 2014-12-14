@@ -2,10 +2,11 @@
 
 namespace Kamedon\Bundle\AndroidToolBundle\Controller;
 
-use Kamedon\Bundle\AndroidToolBundle\Entity\StringResource;
-use Kamedon\Bundle\AndroidToolBundle\Form\ChildrenStringResourceType;
-use Kamedon\Bundle\AndroidToolBundle\Form\DeleteStringResourceType;
-use Kamedon\Bundle\AndroidToolBundle\Form\StringResourceType;
+use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidString;
+use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidStringRepository;
+use Kamedon\Bundle\AndroidToolBundle\Form\TranslateStringResourceType;
+use Kamedon\Bundle\AndroidToolBundle\Form\DeleteAndroidStringType;
+use Kamedon\Bundle\AndroidToolBundle\Form\AndroidStringType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,8 +24,8 @@ class StringResourceController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $stringResource = new StringResource();
-        $form = $this->createForm(new StringResourceType(), $stringResource);
+        $stringResource = new AndroidString();
+        $form = $this->createForm(new AndroidStringType(), $stringResource);
         $form->handleRequest($request);
         if ($form->isValid()) {
             $em = $this->get('doctrine')->getManager();
@@ -42,7 +43,8 @@ class StringResourceController extends Controller
      */
     public function listAction(Request $request)
     {
-        $repository = $this->getDoctrine()->getRepository('KamedonAndroidToolBundle:StringResource');
+        /** @var AndroidStringRepository $repository */
+        $repository = $this->getDoctrine()->getRepository('KamedonAndroidToolBundle:AndroidString');
         $parents = $repository->getParents();
         return ['strings' => $parents];
     }
@@ -54,15 +56,14 @@ class StringResourceController extends Controller
     public function newAction(Request $request, $id)
     {
         $manger = $this->getDoctrine()->getManager();
-        $repository = $manger->getRepository("KamedonAndroidToolBundle:StringResource");
+        $repository = $manger->getRepository("KamedonAndroidToolBundle:AndroidString");
         $parentStringResource = $repository->find($id);
         if ($parentStringResource) {
-            $stringResource = new StringResource();
+            $stringResource = new AndroidString();
             $stringResource->setParent($parentStringResource);
-            $newForm = $this->createForm(new ChildrenStringResourceType(), $stringResource);
+            $newForm = $this->createForm(new TranslateStringResourceType(), $stringResource);
             $newForm->handleRequest($request);
             if ($newForm->isValid()) {
-                $repository = $this->getDoctrine()->getRepository('KamedonAndroidToolBundle:StringResource');
                 if (!$repository->isRegisteredLang($stringResource)) {
                     $em = $this->get('doctrine')->getManager();
                     $em->persist($stringResource);
@@ -73,7 +74,7 @@ class StringResourceController extends Controller
                 }
             }
 
-            $deleteForm = $this->createForm(new DeleteStringResourceType(), $parentStringResource);
+            $deleteForm = $this->createForm(new DeleteAndroidStringType(), $parentStringResource);
             $deleteForm->handleRequest($request);
             if ($deleteForm->isValid()) {
                 $em = $this->get('doctrine')->getManager();

@@ -1,6 +1,8 @@
 <?php
 namespace Kamedon\Bundle\AndroidToolBundle\Form;
 
+use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidString;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\AndroidLang;
 use Kamedon\Bundle\AndroidToolBundle\Utility\Lang;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormEvent;
@@ -13,13 +15,13 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
  * Date: 14/10/25
  * Time: 14:21
  */
-class ChildrenStringResourceType extends AbstractType
+class TranslateStringResourceType extends AbstractType
 {
 
     public function buildForm(\Symfony\Component\Form\FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('lang', 'choice', ['choices' => Lang::getLanguage()])
+            ->add('lang', 'choice', ['choices' => AndroidLang::getLanguage()])
             ->add('value')
             ->add('save', 'submit');
     }

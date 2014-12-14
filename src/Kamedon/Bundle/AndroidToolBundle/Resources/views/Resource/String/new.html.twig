@@ -22,7 +22,7 @@
         <div class="span3">
             <div>
                 <ul class="list-unstyled">
-                    {% for value in parentStringResource.strings %}
+                    {% for value in parentStringResource.translations%}
                         <li>[{{ value.lang }}]  {{ value.value }}</li>
                     {% endfor %}
                 </ul>

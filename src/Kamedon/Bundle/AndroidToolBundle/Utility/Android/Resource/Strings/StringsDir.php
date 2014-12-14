@@ -45,7 +45,6 @@ class StringsDir extends AndroidResource
         foreach ($this->read() as $xml) {
             /** @var AndroidString $string */
             foreach ($xml->read() as $string) {
-                $string->setLang($xml->getLang());
                 yield $string;
             }
         }

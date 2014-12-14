@@ -22,6 +22,11 @@ class StringsZip extends AndroidResource
      */
     public function read()
     {
+        if (!is_dir($this->dir)) {
+            if (!mkdir($this->dir, 0777, true)) {
+                throw new  \RuntimeException();
+            }
+        }
         if (UnZip::extractTo($this->path, $this->dir)) {
             yield new StringsDir($this->dir);
         } else {
@@ -47,7 +52,7 @@ class StringsZip extends AndroidResource
         /** @var StringsDir $dir */
         foreach ($this->read() as $dir) {
             /** @var AndroidString $string */
-            foreach($dir->load() as $string){
+            foreach ($dir->load() as $string) {
                 yield $string;
             }
         }

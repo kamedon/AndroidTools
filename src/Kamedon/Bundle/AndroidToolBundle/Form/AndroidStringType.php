@@ -3,20 +3,21 @@
  * Created by IntelliJ IDEA.
  * User: kamedon
  * Date: 14/10/25
- * Time: 17:14
+ * Time: 15:58
  */
 
 namespace Kamedon\Bundle\AndroidToolBundle\Form;
 
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\FormBuilderInterface;
 
-class DeleteStringResourceType extends AbstractType
+class AndroidStringType extends AbstractType
 {
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(\Symfony\Component\Form\FormBuilderInterface $builder, array $options)
     {
-        $builder ->add('delete', 'submit');
+        $builder
+            ->add('value')
+            ->add('save', 'submit');
     }
 
     /**
@@ -26,6 +27,7 @@ class DeleteStringResourceType extends AbstractType
      */
     public function getName()
     {
-        return 'delete_string_resource';
+        return 'string_resource';
     }
-}
+
+} 

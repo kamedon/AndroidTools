@@ -40,6 +40,7 @@ class StringsXml extends AndroidResource
         $xml = simplexml_load_string($contents);
         foreach ($xml->string as $resource) {
             $string = new AndroidString();
+            $string->setLang($this->getLang());
             $string->setAttr((string)$resource->attributes()->name);
             $string->setValue((string)$resource);
             yield $string;
