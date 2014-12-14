@@ -6,10 +6,10 @@
  * Time: 21:56
  */
 
-namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File;
+namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource;
 
 
-interface FileInterface
+interface ResourceInterface
 {
     /**
      * @return \Generator

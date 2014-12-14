@@ -1,7 +1,7 @@
 <?php
 use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidString;
 use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\AndroidLang;
-use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File\StringsDir;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings\StringsDir;
 
 /**
  * Created by IntelliJ IDEA.
@@ -29,6 +29,7 @@ class StringsDirTest extends PHPUnit_Framework_TestCase
                     '"保存"'
                 ],
             ];
+//        $langs = [AndroidLang::LANG_DEFAULT, 'ja', 'pt', 'ru', 'zh', 'ko'];
         $langs = [AndroidLang::LANG_DEFAULT, 'ja', 'pt', 'ru', 'zh', 'ko'];
 
         $dir = new StringsDir($dirPath);

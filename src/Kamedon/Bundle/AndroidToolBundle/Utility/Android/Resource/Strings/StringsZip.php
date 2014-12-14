@@ -1,6 +1,7 @@
 <?php
-namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File;
+namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings;
 
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\AndroidResource;
 use Kamedon\Bundle\AndroidToolBundle\Utility\File\UnZip;
 
 /**
@@ -9,7 +10,7 @@ use Kamedon\Bundle\AndroidToolBundle\Utility\File\UnZip;
  * Date: 14/12/09
  * Time: 20:58
  */
-class StringsZip extends AndroidResourceFile
+class StringsZip extends AndroidResource
 {
 
     /** @var string */

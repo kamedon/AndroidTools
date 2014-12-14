@@ -6,13 +6,14 @@
  * Time: 21:50
  */
 
-namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File;
+namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings;
 
 
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\AndroidResource;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
-class StringsDir extends AndroidResourceFile
+class StringsDir extends AndroidResource
 {
     const STRING_XML_RESOURCE_FILE_NAME = 'strings.xml';
 

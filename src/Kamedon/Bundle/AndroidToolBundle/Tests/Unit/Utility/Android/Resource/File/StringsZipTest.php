@@ -1,7 +1,7 @@
 <?php
 use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidString;
-use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File\StringsDir;
-use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File\StringsZip;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings\StringsDir;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings\StringsZip;
 
 /**
  * Created by IntelliJ IDEA.

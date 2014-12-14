@@ -1,6 +1,6 @@
 <?php
 use Kamedon\Bundle\AndroidToolBundle\Entity\AndroidString;
-use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File\StringsXml;
+use Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\Strings\StringsXml;
 
 /**
  * Created by IntelliJ IDEA.

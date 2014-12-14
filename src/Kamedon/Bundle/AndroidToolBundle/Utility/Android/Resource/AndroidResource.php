@@ -1,5 +1,5 @@
 <?php
-namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File;
+namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource;
 
 /**
  * Created by IntelliJ IDEA.
@@ -8,7 +8,7 @@ namespace Kamedon\Bundle\AndroidToolBundle\Utility\Android\Resource\File;
  * Time: 20:58
  */
 
-abstract class AndroidResourceFile implements FileInterface
+abstract class AndroidResource implements ResourceInterface
 {
     /** @var  string */
     protected $path;
